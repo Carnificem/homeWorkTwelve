@@ -12,6 +12,9 @@ public class Main {
                 ",название:" + generationP.getTitle() + ",год издания: " + generationP.getYearPublication());
         System.out.println(" Автор: " + myNameIsLegion.getAuthor().getNameAuthor() + " " + myNameIsLegion.getAuthor().getSurnameAuthor() +
                 ",название:" + myNameIsLegion.getTitle() + ",год издания: " + myNameIsLegion.getYearPublication());
+        generationP.setYearPublication(1984);
+        System.out.println(" Автор: " + generationP.getAuthor().getNameAuthor() + " " + generationP.getAuthor().getSurnameAuthor() +
+                ",название:" + generationP.getTitle() + ",год издания: " + generationP.getYearPublication());
 
     }
 }
