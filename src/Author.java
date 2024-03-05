@@ -1,17 +1,17 @@
 public class Author {
-    String name;
-    String surname;
+    private String name;
+    private String surname;
 
     public Author(String name, String surname) {
         this.name = name;
         this.surname = surname;
     }
 
-    public String getNameAuthor() {
+    public String getName() {
         return name;
     }
 
-    public String getSurnameAuthor() {
+    public String getSurname() {
         return surname;
     }
 }

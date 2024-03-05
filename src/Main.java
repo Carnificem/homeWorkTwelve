@@ -8,12 +8,12 @@ public class Main {
         book generationP = new book("Generation\"П\" ", viktorPelevin, 1999);
         book myNameIsLegion = new book("Имя мне легион", grigoriyKlimov, 1975);
 
-        System.out.println(" Автор: " + generationP.getAuthor().getNameAuthor() + " " + generationP.getAuthor().getSurnameAuthor() +
+        System.out.println(" Автор: " + generationP.getAuthor().getName() + " " + generationP.getAuthor().getSurname() +
                 ",название:" + generationP.getTitle() + ",год издания: " + generationP.getYearPublication());
-        System.out.println(" Автор: " + myNameIsLegion.getAuthor().getNameAuthor() + " " + myNameIsLegion.getAuthor().getSurnameAuthor() +
+        System.out.println(" Автор: " + myNameIsLegion.getAuthor().getName() + " " + myNameIsLegion.getAuthor().getSurname() +
                 ",название:" + myNameIsLegion.getTitle() + ",год издания: " + myNameIsLegion.getYearPublication());
         generationP.setYearPublication(1984);
-        System.out.println(" Автор: " + generationP.getAuthor().getNameAuthor() + " " + generationP.getAuthor().getSurnameAuthor() +
+        System.out.println(" Автор: " + generationP.getAuthor().getName() + " " + generationP.getAuthor().getSurname() +
                 ",название:" + generationP.getTitle() + ",год издания: " + generationP.getYearPublication());
 
     }
