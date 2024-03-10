@@ -26,7 +26,7 @@ public class Book {
     }
 
     public String toString() {
-        return "название книги :" + this.title + ",автор :" + this.author;
+        return "название книги:" + this.title + ",автор:" + this.author;
     }
 
     @Override

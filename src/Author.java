@@ -26,6 +26,7 @@ public class Author {
         Author author = (Author) o;
         return author.equals(author.name);
     }
+
     @Override
     public int hashCode() {
         int result = name == null ? 0 : name.hashCode();
