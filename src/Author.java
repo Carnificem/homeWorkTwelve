@@ -14,4 +14,22 @@ public class Author {
     public String getSurname() {
         return surname;
     }
+
+    public String toString() {
+        return this.name + " " + this.surname;
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        Author author = (Author) o;
+        return author.equals(author.name);
+    }
+    @Override
+    public int hashCode() {
+        int result = name == null ? 0 : name.hashCode();
+        result = 31 * result + surname.hashCode();
+        return result;
+    }
 }
