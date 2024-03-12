@@ -32,7 +32,7 @@ public class Author {
 
     @Override
     public int hashCode() {
-        int result = name == null ? 0 : name.hashCode();
+        int result = name == null ? 0 : name.hashCode() ;
         result = result + surname.hashCode();
         return result;
     }

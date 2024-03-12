@@ -43,8 +43,8 @@ public class Book {
     @Override
     public int hashCode() {
         int result = title == null ? 0 : title.hashCode();
-        result = 31 * result + author.hashCode();
-        result = 31 * result + yearPublication;
+        result = result + author.hashCode();
+        result = result + yearPublication;
         return result;
     }
     //public boolean equals(Book other) {

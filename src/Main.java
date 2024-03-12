@@ -7,7 +7,7 @@ public class Main {
 
         Book generationP = new Book("Generation\"П\" ", viktorPelevin, 1999);
         Book myNameIsLegion = new Book("Имя мне легион", grigoriyKlimov, 1975);
-        System.out.println(viktorPelevin + " " + generationP);
+        System.out.println(viktorPelevin + " "+ generationP);
         System.out.println(grigoriyKlimov + " " + myNameIsLegion);
         System.out.println(grigoriyKlimov);
         System.out.println(generationP.equals(myNameIsLegion) ? "названия книг одинаковые" : "названия книг разные");
