@@ -3,11 +3,14 @@ public class Book {
     private Author author;
     private int yearPublication;
 
+
     public Book(String title, Author author, int yearPublication) {
         this.title = title;
         this.author = author;
         this.yearPublication = yearPublication;
+
     }
+
 
     public String getTitle() {
         return title;
@@ -26,15 +29,15 @@ public class Book {
     }
 
     public String toString() {
-        return "название книги:" + this.title + ",автор:" + this.author;
+        return "название книги:" + this.title;
     }
 
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
-        Book book = (Book) o;
-        return title == book.title;
+        Book that = (Book) o;
+        return title.equals(that.title) && author.equals(that.author) && yearPublication == that.yearPublication;
     }
 
     @Override
